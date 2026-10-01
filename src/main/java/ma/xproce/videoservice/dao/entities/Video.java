@@ -1,4 +1,4 @@
-package ma.xproce.videoservice.dao;
+package ma.xproce.videoservice.dao.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -17,6 +17,7 @@ public class Video {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
+    private String url;
     private String description;
     private Date datePublication;
 

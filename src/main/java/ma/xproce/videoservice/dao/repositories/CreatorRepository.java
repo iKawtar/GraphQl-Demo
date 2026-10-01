@@ -1,4 +1,7 @@
 package ma.xproce.videoservice.dao.repositories;
 
-public interface CreatorRepository {
+import ma.xproce.videoservice.dao.entities.Creator;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CreatorRepository extends JpaRepository<Creator, Long> {
 }
